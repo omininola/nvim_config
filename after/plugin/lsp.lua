@@ -25,7 +25,13 @@ cmp.setup({
 })
 
 -- Servidores que deseja configurar
-local servers = { }
+local servers = { 
+  "ts_ls",
+  "tailwindcss",
+  "jsonls",
+  "cssls",
+  "html",
+}
 
 -- Função on_attach para configurar keymaps e funcionalidades adicionais
 local on_attach = function(client, bufnr)
