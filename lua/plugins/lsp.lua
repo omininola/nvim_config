@@ -1,5 +1,17 @@
 return {
     -- LSP
+    {
+	{'neovim/nvim-lspconfig',},
+	{'hrsh7th/cmp-nvim-lsp'},
+	{
+	    'hrsh7th/nvim-cmp',
+	    config = function()
+		require('configs/plugins/lsp')
+	    end,
+	},
+    },
+    --[[
+--    -- LSP
     {	
 	{ -- Gerenciador de LSPs
 	    "williamboman/mason.nvim",
@@ -31,4 +43,6 @@ return {
 	    },
 	},	
     },
+--
+--]]
 }
