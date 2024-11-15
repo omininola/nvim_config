@@ -30,7 +30,7 @@ end)
 vim.opt.undofile = true
 
 -- Keep signcolumn on by default
--- vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 50

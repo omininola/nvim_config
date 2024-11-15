@@ -1,3 +1,4 @@
+print("Hello, Omininola!")
 require("omininola.options")
 require("omininola.remap")
 require("omininola.lazy")

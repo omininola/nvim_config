@@ -22,6 +22,18 @@ cmp.setup({
     })
 })
 
+vim.diagnostic.config({
+  update_in_insert = true,
+  float = {
+    focusable = false,
+    style = 'minimal',
+    border = 'rounded',
+    source = 'always',
+    header = '',
+    prefix = '',
+  },
+})
+
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
   mapping = cmp.mapping.preset.cmdline(),
@@ -40,6 +52,7 @@ cmp.setup.cmdline(':', {
     }),
   matching = { disallow_symbol_nonprefix_matching = false }
 })
+
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
